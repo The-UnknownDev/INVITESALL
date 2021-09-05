@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          find: "@INCREDIBLE_CHAT"
+          find: "@DEADLY_SPAMMER"
 
           replace: "@LEGEND_MR_LOGOS"
 
