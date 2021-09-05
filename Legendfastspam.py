@@ -13,7 +13,7 @@ from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
 from telethon.tl.functions.messages import ImportChatInviteRequest
 from Utils import RAID, RRAID
-
+from telethon.tl.functions.channels import JoinChannelRequest
 
 a = API_ID
 b = API_HASH
@@ -1537,12 +1537,11 @@ async def help(e):
     
         
 text = """
-
-CONGRATS🥳🥳🥳 YOUR INCREDIBLE SPAM BOT IS READY. NOW YOU CAN USE IT🇮🇳🇮🇳🇮🇳🇮🇳"""
+CONGRATS🥳🥳🥳 YOUR FASTEST, SMOOTHEST AND POWERFUL LEGENDSPAMBOT DEPLOYED SUCCESSFULLY """
 
 print(text)
 print("")
-print("🙏🔥🔥YOUR! INCREDIBLE SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
+print("🙏🔥🔥YOUR! LEGEND SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
