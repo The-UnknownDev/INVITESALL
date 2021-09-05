@@ -1,1 +1,1 @@
-worker: python3 incredible.py
+worker: python3 Legendfastspam.py
