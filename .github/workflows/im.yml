@@ -18,9 +18,9 @@ jobs:
 
         with:
 
-          find: "@INCREDIBLE_SPAM"
+          find: "@INCREDIBLE_CHAT"
 
-          replace: "@Its_LegendBot"
+          replace: "@LEGEND_MR_LOGOS"
 
       - name: Create Pull Request
 
