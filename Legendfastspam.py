@@ -112,7 +112,7 @@ async def start_yukki():
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
-            await idk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await idk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await idk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await idk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await idk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -138,7 +138,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 2")
             await ydk.start()
-            await ydk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await ydk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await ydk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await ydk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await ydk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -165,7 +165,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 3")
             await  wdk.start()
-            await wdk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await wdk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await wdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await wdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await wdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -192,7 +192,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 4")
             await hdk.start()
-            await hdk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await hdk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await hdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await hdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await hdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -219,7 +219,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 5")
             await sdk.start()
-            await sdk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await sdk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await sdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await sdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await sdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -246,7 +246,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 6")
             await adk.start()
-            await adk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await adk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await adk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await adk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await adk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -273,7 +273,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 7")
             await bdk.start()
-            await bdk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await bdk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await bdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await bdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await bdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -301,7 +301,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 8")
             await cdk.start()
-            await cdk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await cdk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await cdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await cdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await cdk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -328,7 +328,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 9")
             await ddk.start()
-            await ddk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await ddk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await ddk(functions.channels.JoinChannelRequest(channel="@@INCREDIBLE_SPAM"))
             await ddk(functions.channels.JoinChannelRequest(channel="@@INCREDIBLE_SPAM_BOT"))
             await ddk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -356,7 +356,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 10")
             await edk.start()
-            await edk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIALT"))
+            await edk(functions.channels.JoinChannelRequest(channel="@Legend_UserbotT"))
             await edk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await edk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await edk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
@@ -384,7 +384,7 @@ async def start_yukki():
         try:
             print("Booting Up The Client 11")
             await vkk.start()
-            await vkk(functions.channels.JoinChannelRequest(channel="@CYBER_HUNTERS_OFFICIAL"))
+            await vkk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await vkk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM"))
             await vkk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_SPAM_BOT"))
             await vkk(functions.channels.JoinChannelRequest(channel="@INCREDIBLE_CHAT"))
