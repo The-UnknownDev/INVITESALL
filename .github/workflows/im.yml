@@ -18,7 +18,7 @@ jobs:
 
         with:
 
-          find: "@CYBER_HUNTERS_OFFICIAL"
+          find: "@DEADLY_USERBOT"
 
           replace: "@Legend_Userbot"
 
