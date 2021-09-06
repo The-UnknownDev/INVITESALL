@@ -1,7 +1,7 @@
 {
   "name": "LEGENDSPAM",
   "description": "A smoothest and fastet spam bot made By @Legend_Mr_Hacker.",
-  "logo": "https://telegra.ph/file/35c286ac32e218bd2f535.jpg",
+  "logo": "",
     "env": {
       "STRING": {
         "description": "Telethon String Session",
