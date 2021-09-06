@@ -53,4 +53,4 @@ This is SpamBot Of @Legend_Mr_Hacker Group- https//t.me/LEGEND_USERBOT
 
 ### StringSession
 
-[![String](https://telegra.ph/file/a6bca4695a54de983c015.jpg)](https://replit.com/@KrishnaJaiswal1/LEGENDBOT#main.py) 
+[![String](https://telegra.ph/file/a6bca4695a54de983c015.jpg)](https://replit.com/@KrishnaJaiswal1/LEGENDSPAM#main.py) 
