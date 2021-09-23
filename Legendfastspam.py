@@ -797,7 +797,6 @@ async def gifspam(e, smex):
         pass
 
 
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 @hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
