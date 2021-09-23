@@ -114,7 +114,7 @@ async def start_yukki():
             botme = await idk.get_me()
             await idk(functions.channels.JoinChannelRequest(channel="@Legend_Userbot"))
             await idk(functions.channels.JoinChannelRequest(channel="@Its_LegendBot"))
-            await idk(functions.channels.JoinChannelRequest(channel="@Its_LegendBot_BOT"))
+            await idk(functions.channels.JoinChannelRequest(channel="@LegendFonts"))
             await idk(functions.channels.JoinChannelRequest(channel="@LEGEND_MR_LOGOS"))
             botid = telethon.utils.get_peer_id(botme)
             SMEX_USERS.append(botid)
@@ -797,48 +797,7 @@ async def gifspam(e, smex):
         pass
 
 
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.bio"))
 
-async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗼\n\nCommand:\n\n.bio <Message to set Bio of Userbot accounts>"
-    if e.sender_id in SMEX_USERS:
-        yukki = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)     
-        if len(e.text) > 5:
-            bio = str(yukki[0])
-            text = "Changing Bio"
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                await event.edit("Succesfully Changed Bio By MULTI SPAMBOT")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
-            
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
 @wdk.on(events.NewMessage(incoming=True, pattern=r"\.join"))
