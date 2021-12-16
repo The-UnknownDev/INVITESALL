@@ -1044,6 +1044,7 @@ async def ping(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 async def get_users(e):
     if e.sender_id in SMEX_USERS: 
+        event = await e.reply(text, parse_mode=None, link_preview=None )
         sender = await e.get_sender()
         me = await e.client.get_me()
         if not sender.id == me.id:
