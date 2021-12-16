@@ -1044,13 +1044,12 @@ async def ping(e):
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 async def get_users(e):
     if e.sender_id in SMEX_USERS: 
-        event = await e.reply(text, parse_mode=None, link_preview=None )
         sender = await e.get_sender()
         me = await e.client.get_me()
         if not sender.id == me.id:
             await e.reply(event, "`processing...`")
         else:
-            await event.edit(event, "`processing...`")
+            await e.reply(event, "`processing...`")
         aura = await get_chatinfo(event)
         chat = await event.get_chat()
         if event.is_private:
@@ -1058,26 +1057,26 @@ async def get_users(e):
         s = 0
         f = 0
         error = "None"
-        await event.edit("**TerminalStatus**\n\n`Collecting Users.......`")
+        await e.reply("**TerminalStatus**\n\n`Collecting Users.......`")
         async for user in event.client.iter_participants(aura.full_chat.id):
             try:
                 if error.startswith("Too"):
-                    return await event.edit(
+                    return await e.reply(
                         f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
                     )
                 await event.client(
                     functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
                 )
                 s = s + 1
-                await event.edit(
+                await e.reply(
                     f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
                 )
             except Exception as k:
                 error = str(k)
                 f = f + 1
-        return await event.edit(
-            f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
-        )
+            await e.reply(
+                f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
+            )
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
