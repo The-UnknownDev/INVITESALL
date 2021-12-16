@@ -813,7 +813,8 @@ def user_full_name(user):
 
 
 async def get_chatinfo(event):
-    chat = event.pattern_match.group(1)
+    yukki = ("".join(event.text.split(maxsplit=1)[1:])).split(" ", 1)
+    chat = yukki[0]
     chat_info = None
     if chat:
         try:
