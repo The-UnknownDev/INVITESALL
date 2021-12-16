@@ -1060,24 +1060,24 @@ async def get_users(e):
         error = "None"
         await event.edit("**TerminalStatus**\n\n`Collecting Users.......`")
         async for user in event.client.iter_participants(aura.full_chat.id):
-        try:
-            if error.startswith("Too"):
-                return await event.edit(
-                    f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+            try:
+                if error.startswith("Too"):
+                    return await event.edit(
+                        f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
+                    )
+                await event.client(
+                    functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
                 )
-            await event.client(
-                functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
-            )
-            s = s + 1
-            await event.edit(
-                f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
-            )
-        except Exception as k:
-            error = str(k)
-            f = f + 1
-    return await event.edit(
-        f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
-    )
+                s = s + 1
+                await event.edit(
+                    f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
+                )
+            except Exception as k:
+                error = str(k)
+                f = f + 1
+        return await event.edit(
+            f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
+        )
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
