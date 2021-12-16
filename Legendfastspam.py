@@ -1043,7 +1043,7 @@ async def ping(e):
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 async def get_users(event):
-    if e.sender_id in SMEX_USERS: 
+    if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
         me = await event.client.get_me()
         if not sender.id == me.id:
