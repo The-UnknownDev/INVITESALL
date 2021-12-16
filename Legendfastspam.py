@@ -1080,6 +1080,7 @@ async def get_users(event):
             await krishna.edit(
                 f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
             )
+            await krishna.delete()
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
