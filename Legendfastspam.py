@@ -1379,7 +1379,33 @@ async def ping(e):
 
 
     
-        
+@idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.invjteall"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+@put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
+async def ping(e):
+    if e.sender_id in SMEX_USERS:        
         
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
