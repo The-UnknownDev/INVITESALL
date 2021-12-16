@@ -1070,7 +1070,7 @@ async def get_users(event):
                     functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
                 )
                 s = s + 1
-                awiat krishna.edit(
+                await krishna.edit(
                     f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
                 )
             except Exception as k:
