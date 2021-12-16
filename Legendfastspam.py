@@ -65,9 +65,7 @@ async def get_chatinfo(event):
 def user_full_name(user):
     names = [user.first_name, user.last_name]
     names = [i for i in list(names) if i]
-    full_name = " ".join(names)
-    return full_name
-
+    fu
 
 a = API_ID
 b = API_HASH
@@ -981,73 +979,7 @@ async def _(e):
                 await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
-            
-            
-
-@idk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.delayspam"))
-
-async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."
-    if e.sender_id in SMEX_USERS:
-        if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
-            return await e.reply(usage, parse_mode=None, link_preview=None )
-        smex = await e.get_reply_message()
-        yukki = "".join(e.text.split(maxsplit=1)[1:]).split(" ", 2)
-        yukkisexy = yukki[1:]
-        if len(yukkisexy) == 2:
-            message = str(yukkisexy[1])
-            counter = int(yukkisexy[0])
-            sleeptime = float(yukki[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    if e.reply_to_msg_id:
-                        await smex.reply(message)
-                    else:
-                        await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.media:  
-            counter = int(yukkisexy[0])
-            sleeptime = float(yukki[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "document"):
-                    smex = await e.client.send_file(e.chat_id, smex, caption=smex.text)
-                    await gifspam(e, smex) 
-                await asyncio.sleep(sleeptime)
-        elif e.reply_to_msg_id and smex.text:
-            message = smex.text
-            counter = int(yukkisexy[0])
-            sleeptime = float(yukki[0])
-            for _ in range(counter):
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(sleeptime)
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
-
+           
        
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.ping"))
@@ -1111,39 +1043,39 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
-async def get_users(event):
+async def get_users(e):
     if e.sender_id in SMEX_USERS: 
-        sender = await event.get_sender()
-        me = await event.client.get_me()
+        sender = await e.get_sender()
+        me = await e.client.get_me()
         if not sender.id == me.id:
-            await event.reply(event, "`processing...`")
+            await e.reply(event, "`processing...`")
         else:
-            await event.reply(event, "`processing...`")
+            await event.edit(event, "`processing...`")
         aura = await get_chatinfo(event)
         chat = await event.get_chat()
         if event.is_private:
-            return await event.reply("`Sorry, Cant add users here`")
+            return await event.edit("`Sorry, Cant add users here`")
         s = 0
         f = 0
         error = "None"
-        await event.reply("**TerminalStatus**\n\n`Collecting Users.......`")
+        await event.edit("**TerminalStatus**\n\n`Collecting Users.......`")
         async for user in event.client.iter_participants(aura.full_chat.id):
         try:
             if error.startswith("Too"):
-                return await event.reply(
+                return await event.edit(
                     f"**Terminal Finished With Error**\n(`May Got Limit Error from telethon Please try agin Later`)\n**Error** : \n`{error}`\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people"
                 )
             await event.client(
                 functions.channels.InviteToChannelRequest(channel=chat, users=[user.id])
             )
             s = s + 1
-            await event.reply(
+            await event.edit(
                 f"**Terminal Running...**\n\n• Invited `{s}` people \n• Failed to Invite `{f}` people\n\n**× LastError:** `{error}`"
             )
-        except Exception as e:
-            error = str(e)
+        except Exception as k:
+            error = str(k)
             f = f + 1
-    return await event.reply(
+    return await event.edit(
         f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
     )
 
