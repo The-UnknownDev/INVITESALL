@@ -1,4 +1,3 @@
-Telethon
 telethon
 python-dotenv
 asyncio
