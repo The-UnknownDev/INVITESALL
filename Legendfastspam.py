@@ -1127,6 +1127,9 @@ async def get_users(event):
         async for user in event.client.iter_participants(legend.full_chat.id):
             try:
                 await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
                 s = s + 1
                 await krishna.edit(
                     f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
@@ -1279,11 +1282,13 @@ async def restart(e):
     
         
 text = """
-CONGRATS🥳🥳🥳 &THANKS TO LEGENDBOY ""
+CONGRATS🥳🥳🥳 &THANKS TO LEGENDBOY """
 
 print(text)
 print("")
 print("🙏🔥🔥 BOT STARTED SUCCESFULLY.🔥🔥🙏")
+
+
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
