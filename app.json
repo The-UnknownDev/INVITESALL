@@ -136,122 +136,122 @@
       "API_ID2": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID3": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID4": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID5": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID6": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID7": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID8": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID9": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID10": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID11": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID12": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID13": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID14": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID15": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID16": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID17": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID18": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID19": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID20": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_ID21": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID22": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID23": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID24": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_ID25": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH": {
         "description": "Api Hash",
@@ -261,122 +261,122 @@
       "API_HASH2": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH3": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH4": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH5": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH6": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH7": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH8": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH9": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH10": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH11": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH12": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH13": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH14": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH15": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false 
       },
       "API_HASH16": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH17": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH18": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH19": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH20": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH21": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH22": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH23": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH24": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "API_HASH25": {
         "description": "Api Hash",
         "value": "",
-        "required": true
+        "required": false
       },
       "SUDO": {
         "description": "Sudo Users Id",
