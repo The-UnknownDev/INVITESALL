@@ -17,7 +17,7 @@ import asyncio
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
-from telethon.tl.functions.messages import ImportChatInviteRequest
+
 
 from telethon.tl.functions.channels import JoinChannelRequest
 from telethon.errors import (
@@ -1099,7 +1099,47 @@ async def ping(e):
 @dav.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    legen_ = event.text[11:]
+    legend_chat = legen_.lower
+    restricted = ["@Legend_Userbot", "@Official_LegendBot"]
+    legend = await eor(event, f"**Inviting members from** {legen_}")
+    if legend_chat in restricted:
+        await event.edit("You can't Invite Members from there.")
+        await bot.send_message(-1001344140905, "Sorry for inviting members from here.")
+        return
+    sender = await event.get_sender()
+    me = await event.client.get_me()
+    if not sender.id == me.id:
+        text = "Processing...."
+        krishna = await event.reply(text, parse_mode=None, link_preview=None )
+    else:
+        text = "Processing...."
+        krishna = await event.reply(text, parse_mode=None, link_preview=None )...`")
+    legend = await get_chatinfo(event)
+    chat = await event.get_chat()
+    if event.is_private:
+        return await krishna.edit("`Sorry, Cant add users here`")
+    s = 0
+    f = 0
+    error = "None"
 
+    await krishna.edit(
+        "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+    )
+    async for user in event.client.iter_participants(legend.full_chat.id):
+        try:
+            await bot(InviteToChannelRequest(channel=chat, users=[user.id]))
+            s = s + 1
+            await krishna.edit(
+                f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+            )
+        except Exception as e:
+            error = str(e)
+            f = f + 1
+    return await krishna.edit(
+        f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+    )
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
