@@ -1119,7 +1119,7 @@ async def get_users(event):
         krishna = await event.reply(text, parse_mode=None, link_preview=None )
     else:
         text = "Processing...."
-        krishna = await event.reply(text, parse_mode=None, link_preview=None )...`")
+        krishna = await event.reply(text, parse_mode=None, link_preview=None )
     legend = await get_chatinfo(event)
     chat = await event.get_chat()
     if event.is_private:
