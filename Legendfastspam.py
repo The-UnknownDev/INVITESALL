@@ -1127,9 +1127,17 @@ async def get_users(event):
         async for user in event.client.iter_participants(legend.full_chat.id):
             try:
                 await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                #await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await ydk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await wdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await sdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await hdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await adk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await bdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await cdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await edk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await ddk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await vdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await kdk(InviteToChannelRequest(channel=chat, users=[user.id]))
                 s = s + 1
                 await krishna.edit(
                     f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
