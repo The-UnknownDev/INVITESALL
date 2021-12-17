@@ -1279,11 +1279,11 @@ async def restart(e):
     
         
 text = """
-CONGRATS🥳🥳🥳 YOUR FASTEST, SMOOTHEST AND POWERFUL LEGENDSPAMBOT DEPLOYED SUCCESSFULLY """
+CONGRATS🥳🥳🥳 &THANKS TO LEGENDBOY ""
 
 print(text)
 print("")
-print("🙏🔥🔥YOUR! LEGEND SPAM BOT STARTED SUCCESFULLY.🔥🔥🙏")
+print("🙏🔥🔥 BOT STARTED SUCCESFULLY.🔥🔥🙏")
 if len(sys.argv) not in (1, 3, 4):
     try:
         idk.disconnect()
