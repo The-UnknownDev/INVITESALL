@@ -33,57 +33,57 @@ grp = GROUP_USERNAME
 if "@" in grp:
     grp = grp.replace("@", "")
 
-a = API_ID
-aa = API_ID2
-ba = API_ID3
-ca = API_ID4
-da = API_ID5
-ea = API_ID6
-fa = API_ID7
-ga = API_ID8
-ha = API_ID9
-ia = API_ID10
-ja = API_ID11
-ka = API_ID12
-la = API_ID13
-ma = API_ID14
-na = API_ID15
-oa = API_ID16
-pa = API_ID17
-qa = API_ID18
-ra = API_ID19
-sa = API_ID20
-ta = API_ID21
-ua = API_ID22
-va = API_ID23
-wa = API_ID24
-xa = API_ID25
+sup = API_ID
+aa = API_ID2 or sup
+ba = API_ID3 or sup
+ca = API_ID4 or sup
+da = API_ID5 or sup
+ea = API_ID6 or sup
+fa = API_ID7 or sup
+ga = API_ID8 or sup
+ha = API_ID9 or sup
+ia = API_ID10 or sup
+ja = API_ID11 or sup
+ka = API_ID12 or sup
+la = API_ID13 or sup
+ma = API_ID14 or sup
+na = API_ID15 or sup
+oa = API_ID16 or sup
+pa = API_ID17 or sup
+qa = API_ID18 or sup
+ra = API_ID19 or sup
+sa = API_ID20 or sup
+ta = API_ID21 or sup
+ua = API_ID22 or sup
+va = API_ID23 or sup
+wa = API_ID24 or sup
+xa = API_ID25 or sup
 
-b = API_HASH
-ab = API_HASH2
-bb = API_HASH3
-cb = API_HASH4
-db = API_HASH5
-eb = API_HASH6
-fb = API_HASH7
-gb = API_HASH8
-hb = API_HASH9
-ib = API_HASH10
-jb = API_HASH11
-kb = API_HASH12
-lb = API_HASH13
-mb = API_HASH14
-nb = API_HASH15
-ob = API_HASH16
-pb = API_HASH17
-qb = API_HASH18
-rb = API_HASH19
-sb = API_HASH20
-tb = API_HASH21
-ub = API_HASH22
-vb = API_HASH23
-wb = API_HASH24
-xb = API_HASH25
+sap = API_HASH
+ab = API_HASH2 or sap
+bb = API_HASH3 or sap
+cb = API_HASH4 or sap
+db = API_HASH5 or sap
+eb = API_HASH6 or sap
+fb = API_HASH7 or sap
+gb = API_HASH8 or sap
+hb = API_HASH9 or sap
+ib = API_HASH10 or sap
+jb = API_HASH11 or sap
+kb = API_HASH12 or sap
+lb = API_HASH13 or sap
+mb = API_HASH14 or sap
+nb = API_HASH15 or sap
+ob = API_HASH16 or sap
+pb = API_HASH17 or sap
+qb = API_HASH18 or sap
+rb = API_HASH19 or sap
+sb = API_HASH20 or sap
+tb = API_HASH21 or sap
+ub = API_HASH22 or sap
+vb = API_HASH23 or sap
+wb = API_HASH24 or sap
+xb = API_HASH25 or sap
 
 smex = STRING
 smexx = STRING2
@@ -175,7 +175,7 @@ async def start_yukki():
     if smex:
         session_name = str(smex)
         print("String 1 Found")
-        idk = TelegramClient(StringSession(session_name), api_id=a, api_hash=b, connection=ConnectionTcpAbridged, auto_reconnect=True, connection_retries=None)
+        idk = TelegramClient(StringSession(session_name), api_id=sup, api_hash=sap, connection=ConnectionTcpAbridged, auto_reconnect=True, connection_retries=None)
         try:
             print("Booting Up The Client 1")
             await idk.start()
@@ -1104,46 +1104,39 @@ async def ping(e):
 @raj.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 @put.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 async def get_users(event):
-    legen_ = event.text[11:]
-    legend_chat = legen_.lower
-    restricted = ["@Legend_Userbot", "@Official_LegendBot"]
-    legend = await eor(event, f"**Inviting members from** {legen_}")
-    if legend_chat in restricted:
-        await event.edit("You can't Invite Members from there.")
-        await bot.send_message(-1001344140905, "Sorry for inviting members from here.")
-        return
-    sender = await event.get_sender()
-    me = await event.client.get_me()
-    if not sender.id == me.id:
-        text = "Processing...."
-        krishna = await event.reply(text, parse_mode=None, link_preview=None )
-    else:
-        text = "Processing...."
-        krishna = await event.reply(text, parse_mode=None, link_preview=None )
-    legend = await get_chatinfo(event)
-    chat = await event.get_chat()
-    if event.is_private:
-        return await krishna.edit("`Sorry, Cant add users here`")
-    s = 0
-    f = 0
-    error = "None"
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
 
-    await krishna.edit(
-        "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
-    )
-    async for user in event.client.iter_participants(legend.full_chat.id):
-        try:
-            await bot(InviteToChannelRequest(channel=chat, users=[user.id]))
-            s = s + 1
-            await krishna.edit(
-                f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
-            )
-        except Exception as e:
-            error = str(e)
-            f = f + 1
-    return await krishna.edit(
-        f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
-    )
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
+                await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
