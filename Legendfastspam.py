@@ -887,7 +887,7 @@ async def _(e):
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("𝐉𝐎𝐢𝐍 𝐇𝐎𝐆𝐘𝐀 𝐕𝐀𝐈 𝐀𝐁 𝐁𝐓𝐀 𝐊𝐈𝐒𝐊𝐈 𝐌𝐀𝐑𝐔😏🔥")
+                await event.edit("𝐉𝐎𝐢𝐍 𝐇𝐎𝐆𝐘𝐀 𝐕𝐀𝐈 AB BATA KISKO MARU PAHLE🔥")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -971,7 +971,7 @@ async def _(e):
         if len(e.text) == 7:
             bc = yukki[0]
             bc = int(bc)
-            text = "RDX BOT Leaving....."
+            text = "BOT Leaving....."
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
@@ -1016,7 +1016,7 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"★彡[ᴘᴏɴɢ]彡★!\n`{ms}` 𝗺𝘀")
+        await event.edit(f"PING PONG!\n`{ms}` 𝗺𝘀")
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
@@ -1081,7 +1081,7 @@ async def get_users(event):
             await krishna.edit(
                 f"**Terminal Finished** \n\n• Successfully Invited `{s}` people \n• failed to invite `{f}` people"
             )
-            await asyncio.sleep(100)
+            await asyncio.sleep(300)
             await krishna.delete()
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.restart"))
