@@ -83,3 +83,4 @@ API_HASH25 = getenv("API_HASH25")
 
 BIO_MESSAGE = getenv("BIO")
 SUDO = list(map(int, getenv("SUDO").split()))
+GROUP_USERNAME = getenv("GROUP_USERNAME")
