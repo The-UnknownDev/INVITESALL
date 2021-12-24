@@ -1317,30 +1317,6 @@ async def ping(e):
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@edk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@aan.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
-@put.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1365,53 +1341,855 @@ async def get_users(event):
         async for user in event.client.iter_participants(legend.full_chat.id):
             try:
                 await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(10)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await ydk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(10)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await wdk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
-                await sdk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await hdk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
+                await sdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+@adk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await adk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await bdk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await cdk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@edk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await edk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await ddk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await vkk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await kkk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await lkk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
-                await sid(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
-                await shy(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await mkk(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+
+@sid.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
+                await sid(InviteToChannelRequest(channel=chat, users=[user.id]))
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@shy.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
+                await shy(InviteToChannelRequest(channel=chat, users=[user.id]))
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@aan.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await aan(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@ake.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await ake(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@eel.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await eel(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@khu.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await khu(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@shi.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await shi(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
-                await yaa(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
+                await yaa
+(InviteToChannelRequest(channel=chat, users=[user.id]))
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@dav.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await dav(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@raj.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await raj(InviteToChannelRequest(channel=chat, users=[user.id]))
-                await asyncio.sleep(5)
+                s = s + 1
+                await krishna.edit(
+                    f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+                )
+            except Exception as e:
+                error = str(e)
+                f = f + 1
+        return await krishna.edit(
+            f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
+        )
+@put.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+async def get_users(event):
+    if event.sender_id in SMEX_USERS: 
+        sender = await event.get_sender()
+        me = await event.client.get_me()
+        if not sender.id == me.id:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        else:
+            text = "Processing...."
+            krishna = await event.reply(text, parse_mode=None, link_preview=None )
+        legend = await get_chatinfo(event)
+        chat = await event.get_chat()
+        if event.is_private:
+            return await krishna.edit("`Sorry, Cant add users here`")
+        s = 0
+        f = 0
+        error = "None"
+
+        await krishna.edit(
+            "**⚜️[Ͳєямιиαℓ Տτατυѕ](https://t.me/Legend_Userbot)**\n\n`🔸Inviting Users.......`"
+        )
+        async for user in event.client.iter_participants(legend.full_chat.id):
+            try:
                 await put(InviteToChannelRequest(channel=chat, users=[user.id]))
                 s = s + 1
                 await krishna.edit(
@@ -1423,6 +2201,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
+
 
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
