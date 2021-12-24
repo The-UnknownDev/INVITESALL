@@ -284,7 +284,7 @@ async def start_yukki():
             pass
 
     if smexxxx:
-        session_name = str(smexxxx)
+        session_name = StringSession(str(smexxxx))
         print("String 4 Found")
         hdk = TelegramClient(
             session=session_name,
@@ -327,7 +327,7 @@ async def start_yukki():
             pass
 
     if smexxxxx:
-        session_name = str(smexxxxx)
+        session_name = StringSession(str(smexxxxx))
         print("String 5 Found")
         sdk = TelegramClient(
             session=session_name,
@@ -370,7 +370,7 @@ async def start_yukki():
             pass
                   
     if sixth:
-        session_name = str(sixth)
+        session_name = StringSession(str(sixth))
         print("String 6 Found")
         adk = TelegramClient(
             session=session_name,
@@ -413,7 +413,7 @@ async def start_yukki():
             pass
 
     if seven:
-        session_name = str(seven)
+        session_name = StringSession(str(seven))
         print("String 7 Found")
         bdk = TelegramClient(
             session=session_name,
@@ -457,7 +457,7 @@ async def start_yukki():
         
     
     if eight:
-        session_name = str(eight)
+        session_name = StringSession(str(eight))
         print("String 8 Found")
         cdk = TelegramClient(
             session=session_name,
@@ -492,7 +492,7 @@ async def start_yukki():
             pass   
         
     if ninth:
-        session_name = str(ninth)
+        session_name = StringSession(str(ninth))
         print("String 9 Found")
         ddk = TelegramClient(
             session=session_name,
@@ -528,7 +528,7 @@ async def start_yukki():
     
   
     if tenth:
-        session_name = str(tenth)
+        session_name = StringSession(str(tenth))
         print("String 10 Found")
         edk = TelegramClient(
             session=session_name,
@@ -564,7 +564,7 @@ async def start_yukki():
         
     
     if eleve:
-        session_name = str(eleve)
+        session_name = StringSession(str(eleve))
         print("String 11 Found")
         vkk = TelegramClient(
             session=session_name,
@@ -600,7 +600,7 @@ async def start_yukki():
         
     
     if twelv:
-        session_name = str(twelv)
+        session_name = StringSession(str(twelv))
         kkk = TelegramClient(
             session=session_name,
             api_id=ka,
@@ -635,7 +635,7 @@ async def start_yukki():
     
   
     if thirt:
-        session_name = str(thirt)
+        session_name = StringSessionstr(thirt))
         print("String 13  Found")
         lk = TelegramClient(
             session=session_name,
@@ -671,7 +671,7 @@ async def start_yukki():
         
     
     if forte:
-        session_name = str(forte)
+        session_name = StringSession(str(forte))
         print("String 14 Found")
         mkk = TelegramClient(
             session=session_name,
@@ -707,7 +707,7 @@ async def start_yukki():
         
     
     if fifth:
-        session_name = str(fifth)
+        session_name = StringSessionstr(fifth))
         print("String 15 Found")
         sid = TelegramClient(
             session=session_name,
@@ -743,7 +743,7 @@ async def start_yukki():
 
 
     if sieee:
-        session_name = str(sieee)
+        session_name = StringSession(str(sieee))
         print("String 16 Found")
         shy = TelegramClient(
             session=session_name,
@@ -777,7 +777,7 @@ async def start_yukki():
             pass
    
     if seeee:
-        session_name = str(seeee)
+        session_name = StringSession(str(seeee))
         print("String 17 Found")
         aan = TelegramClient(
             session=session_name,
@@ -811,7 +811,7 @@ async def start_yukki():
             pass
    
     if eieee:
-        session_name = str(eieee)
+        session_name = StringSession(str(eieee))
         print("String 18 Found")
         ake = TelegramClient(
             session=session_name,
@@ -845,7 +845,7 @@ async def start_yukki():
             pass
    
     if nieee:
-        session_name = str(nieee)
+        session_name = StringSession(str(nieee))
         print("String 19 Found")
         eel = TelegramClient(
             session=session_name,
@@ -879,7 +879,7 @@ async def start_yukki():
             pass
    
     if gandu:
-        session_name = str(gandu)
+        session_name = StringSession(str(gandu))
         print("String 20 Found")
         khu = TelegramClient(
             session=session_name,
@@ -913,7 +913,7 @@ async def start_yukki():
             pass
    
     if ekish:
-        session_name = str(ekish)
+        session_name = StringSession(str(ekish))
         print("String 21 Found")
         shi = TelegramClient(
             session=session_name,
@@ -947,7 +947,7 @@ async def start_yukki():
             pass
    
     if baish:
-        session_name = str(baish)
+        session_name = StringSession(str(baish))
         print("String 22 Found")
         yaa = TelegramClient(
             session=session_name,
@@ -981,7 +981,7 @@ async def start_yukki():
             pass
    
     if teish:
-        session_name = str(teish)
+        session_name = StringSession(str(teish))
         print("String 23 Found")
         dav = TelegramClient(
             session=session_name,
@@ -1015,7 +1015,7 @@ async def start_yukki():
             pass
    
     if tfour:
-        session_name = str(tfour)
+        session_name = StringSession(str(tfour))
         print("String 24 Found")
         raj = TelegramClient(
             session=session_name,
@@ -1049,7 +1049,7 @@ async def start_yukki():
             pass
    
     if tfive:
-        session_name = str(tfive)
+        session_name = StringSession(str(tfive))
         print("String 25 Found")
         put = TelegramClient(
             session=session_name,
