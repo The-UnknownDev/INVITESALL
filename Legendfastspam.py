@@ -1305,7 +1305,7 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"PING PONG!\n`{ms}` 𝗺𝘀")
 
-"""
+
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
@@ -1356,32 +1356,54 @@ async def get_users(event):
         async for user in event.client.iter_participants(legend.full_chat.id):
             try:
                 await idk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(10)
                 await ydk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(10)
                 await wdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await sdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await hdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await adk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await bdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await cdk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await edk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await ddk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await vkk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await kkk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await lkk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await sid(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await shy(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await mkk(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await aan(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await ake(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await eel(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await khu(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await shi(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await yaa(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await dav(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await raj(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await asyncio.sleep(5)
                 await put(InviteToChannelRequest(channel=chat, users=[user.id]))
-                #await (InviteToChannelRequest(channel=chat, users=[user.id]))
-                #await ake(InviteToChannelRequest(channel=chat, users=[user.id]))
                 s = s + 1
                 await krishna.edit(
                     f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
@@ -1392,7 +1414,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-"""
+
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
