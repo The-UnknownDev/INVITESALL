@@ -173,17 +173,17 @@ async def start_yukki():
     global put
     
     if smex:
-        session_name = StringSession(str(smex))
-        print("String 1 Found")
-        idk = TelegramClient(
-            session=session_name,
-            api_id=sup,
-            api_hash=sap,
-            connection=ConnectionTcpAbridged,
-            auto_reconnect=True,
-            connection_retries=None,
-            )
         try:
+            session_name = StringSession(str(smex))
+            print("String 1 Found")
+            idk = TelegramClient(
+                session=session_name,
+                api_id=sup,
+                api_hash=sap,
+                connection=ConnectionTcpAbridged,
+                auto_reconnect=True,
+                connection_retries=None,
+                )
             print("Booting Up The Client 1")
             await idk.start()
             botme = await idk.get_me()
