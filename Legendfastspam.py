@@ -175,7 +175,8 @@ async def start_yukki():
     if smex:
         session_name = StringSession(str(smex))
         print("String 1 Found")
-  ""       idk = TelegramClient(
+"""
+        idk = TelegramClient(
             session=session_name,
             api_id=sup,
             api_hash=sap,
