@@ -173,7 +173,7 @@ async def start_yukki():
     global put
     
     if smex:
-        session_name = str(smex)
+        session_name = StringSession(str(smex))
         print("String 1 Found")
         idk = TelegramClient(
             session=session_name,
@@ -207,7 +207,7 @@ async def start_yukki():
             pass
    
     if smexx:
-        session_name = str(smexx)
+        session_name = StringSession(str(smexx))
         print("String 2 Found")
         ydk = TelegramClient(
             session=session_name,
@@ -241,7 +241,7 @@ async def start_yukki():
             pass
 
     if smexxx:
-        session_name = str(smexxx)
+        session_name = StringSession(str(smexxx))
         print("String 3 Found")
         wdk = TelegramClient(
             session=session_name,
