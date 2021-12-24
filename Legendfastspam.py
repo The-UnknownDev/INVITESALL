@@ -2084,8 +2084,7 @@ async def get_users(event):
         )
         async for user in event.client.iter_participants(legend.full_chat.id):
             try:
-                await yaa
-(InviteToChannelRequest(channel=chat, users=[user.id]))
+                await yaa(InviteToChannelRequest(channel=chat, users=[user.id]))
                 s = s + 1
                 await krishna.edit(
                     f"🤟**Inviting Users👇 **\n\n**⚜Invited :**  `{s}` users \n**🔰Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
