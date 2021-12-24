@@ -627,7 +627,7 @@ async def start_yukki():
     
   
     if thirt:
-        session_name = StringSessionstr(thirt))
+        session_name = StringSession(str(thirt))
         print("String 13  Found")
         lk = TelegramClient(
             session=session_name,
@@ -699,7 +699,7 @@ async def start_yukki():
         
     
     if fifth:
-        session_name = StringSessionstr(fifth))
+        session_name = StringSession(str(fifth))
         print("String 15 Found")
         sid = TelegramClient(
             session=session_name,
