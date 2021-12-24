@@ -1313,7 +1313,7 @@ async def ping(e):
         ms = (end-start).microseconds / 1000
         await event.edit(f"PING PONG!\n`{ms}` 𝗺𝘀")
 
-
+"""
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
@@ -1400,7 +1400,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-
+"""
 
 @idk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
 @ydk.on(events.NewMessage(incoming=True, pattern=r"\.inviteall"))
