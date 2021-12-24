@@ -1352,7 +1352,7 @@ async def get_users(event):
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
 
-@ydk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@ydk.on(events.NewMessage(incoming=True, pattern=r"\,invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1389,7 +1389,7 @@ async def get_users(event):
         )
 
 
-@wdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@wdk.on(events.NewMessage(incoming=True, pattern=r"\?invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1424,7 +1424,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@hdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@hdk.on(events.NewMessage(incoming=True, pattern=r"\+invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1461,7 +1461,7 @@ async def get_users(event):
         )
 
 
-@sdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@sdk.on(events.NewMessage(incoming=True, pattern=r"\-invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1497,7 +1497,7 @@ async def get_users(event):
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
 
-@adk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@adk.on(events.NewMessage(incoming=True, pattern=r"\×invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1533,7 +1533,7 @@ async def get_users(event):
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
 
-@bdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@bdk.on(events.NewMessage(incoming=True, pattern=r"\÷invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1569,7 +1569,7 @@ async def get_users(event):
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
 
-@cdk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@cdk.on(events.NewMessage(incoming=True, pattern=r"\=invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1639,7 +1639,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@ddk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@ddk.on(events.NewMessage(incoming=True, pattern=r"\,invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1674,7 +1674,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@vkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@vkk.on(events.NewMessage(incoming=True, pattern=r"\?invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1709,7 +1709,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@kkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@kkk.on(events.NewMessage(incoming=True, pattern=r"\+invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1744,7 +1744,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@lkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@lkk.on(events.NewMessage(incoming=True, pattern=r"\-invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1779,7 +1779,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@mkk.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@mkk.on(events.NewMessage(incoming=True, pattern=r"\×invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1815,7 +1815,7 @@ async def get_users(event):
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
 
-@sid.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@sid.on(events.NewMessage(incoming=True, pattern=r"\÷invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1850,7 +1850,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@shy.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@shy.on(events.NewMessage(incoming=True, pattern=r"\=invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
