@@ -638,7 +638,7 @@ async def start_yukki():
     if thirt:
         session_name = StringSession(str(thirt))
         print("String 13  Found")
-        lk = TelegramClient(
+        lkk = TelegramClient(
             session=session_name,
             api_id=la,
             api_hash=lb,
@@ -1920,7 +1920,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@ake.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@ake.on(events.NewMessage(incoming=True, pattern=r"\,invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1955,7 +1955,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@eel.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@eel.on(events.NewMessage(incoming=True, pattern=r"\?invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -1990,7 +1990,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@khu.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@khu.on(events.NewMessage(incoming=True, pattern=r"\+invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -2025,7 +2025,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@shi.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@shi.on(events.NewMessage(incoming=True, pattern=r"\-invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -2060,7 +2060,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@yaa.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@yaa.on(events.NewMessage(incoming=True, pattern=r"\×invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -2095,7 +2095,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@dav.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@dav.on(events.NewMessage(incoming=True, pattern=r"\÷invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
@@ -2130,7 +2130,7 @@ async def get_users(event):
         return await krishna.edit(
             f"[τєямנиαℓ ƒιиιѕнє∂](https://t.me/Legend_Userbot) \n\n🔸 Sυϲϲєѕѕƒυℓℓγ ιиνιτє∂ `{s}` ρєορℓє \n⚠️ ƒαιℓє∂ το ιиνιτє `{f}` ρєορℓє"
         )
-@raj.on(events.NewMessage(incoming=True, pattern=r"\.invitesall"))
+@raj.on(events.NewMessage(incoming=True, pattern=r"\=invitesall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS: 
         sender = await event.get_sender()
