@@ -262,7 +262,7 @@ async def start_yukki():
         pass
         session_name = "startup"
         wdk = TelegramClient(
-            session=session,
+            session=session_name,
             api_id=ba,
             api_hash=bb,
             connection=ConnectionTcpAbridged,
@@ -391,7 +391,7 @@ async def start_yukki():
         pass
         session_name = "startup"
         adk = TelegramClient(
-            session=session,
+            session=session_name,
             api_id=ea,
             api_hash=eb,
             connection=ConnectionTcpAbridged,
