@@ -380,7 +380,7 @@
       },
       "GROUP_USERNAME": {
         "description": "WRITE UR GROUP USERNAME. Id Will Automatically Add to that Group",
-        "value": "@Legend_Userbot",
+        "value": "@Legend_userbots",
         "required": true
       },      
       "SUDO": {
